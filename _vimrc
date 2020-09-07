@@ -8,7 +8,7 @@ set nocompatible
 set backspace=indent,eol,start
 "显示行号"
 set number
-set history=100
+set history=100 
 " 隐藏滚动条"    
 "set guioptions-=r 
 set guioptions-=L
@@ -20,9 +20,10 @@ let g:asyncrun_encs='gbk'
 set ai
 set si
 "隐藏顶部标签栏"
+"set guioptions-=m
 set showtabline=0
 "设置字体"
-set guifont=Consolas\:h11
+set guifont=Monospace\ Regular\ 14
 syntax on   "开启语法高亮
 let g:solarized_termcolors=256  "solarized主题设置在终端下的设置"
 colorscheme desert
@@ -38,30 +39,32 @@ set laststatus=2    "命令行为两行"
 set fenc=utf-8      "文件编码"
 set backspace=2
 set mouse=a     "启用鼠标"
-set selection=exclusive
-set selectmode=mouse,key
+"set selection=exclusive
+"set selectmode=mouse,key
 set matchtime=5
 "忽略大小写"
 "set ignorecase 
-set incsearch
+"set incsearch
 set hlsearch        "高亮搜索项"
-set whichwrap+=<,>,h,l
+"set whichwrap+=<,>,h,l
 set autoread
 set cursorline      "突出显示当前行"
 set cursorcolumn        "突出显示当前列"
-set ts=4
-"set expandtab
+set ts=8
+set expandtab
 "set autoindent
 set lines=40  columns=150
 set ruler "可显示最后一行的状态
 set showmode "左下角哪一行的状态
 "set bg=dark "设置背景为黑色
 let g:SuperTabDefaultCompletionType="context"
+"let  g:SuperTabDefaultCompletionType=2
 
 hi        CursorColumn                          guibg=grey30           gui=NONE        "光标所在的屏幕列
 hi        CursorLine                            guibg=grey30          gui=NONE        "光标所在的屏幕行
 hi        NonText        guifg=#007FFF          guibg=#083040           gui=NONE        "窗口尾部的'~'和 '@'
-
+hi 		  StatusLineNC 	 guibg=#000000 			guifg=#ffffff	      ctermfg=White ctermbg=Black term=none cterm=none gui=none  "状态栏
+"hi StatusLineNC guibg=#31312D guifg=#526A83 ctermfg=White ctermbg=Black term=none cterm=none gui=none  "状态栏
 
 
 "python 编译
@@ -72,6 +75,7 @@ autocmd BufRead *.py nmap <F6> :make<CR>
 ""    autocmd BufRead *.py copen 如果是py文件，则同时打开编译信息窗口 
 
 
-
 hi Normal guibg=#083040   guifg=#aabbaa gui=NONE
 highlight Comment guifg=#99ccff  guibg=NONE gui=NONE
+
+
