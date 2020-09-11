@@ -65,7 +65,9 @@ set showmode "左下角哪一行的状态
 
 hi      CursorColumn                                    guibg=grey30            gui=NONE        "光标所在的屏幕列
 hi      CursorLine                                      guibg=grey30            gui=NONE        "光标所在的屏幕行
-hi      NonText                 guifg=#007FFF           guibg=#284868           gui=NONE        "窗口尾部的'~'和 '@'
+"hi      NonText                 guifg=#007FFF           guibg=#284868           gui=NONE        "窗口尾部的'~'和 '@'
+"hi      NonText                 guifg=#083040           guibg=#083040           gui=NONE        "窗口尾部的'~'和 '@'
+hi      NonText                 guifg=#007FFF          guibg=#083040           gui=NONE        "窗口尾部的'~'和 '@'
 "supertab 菜单和下拉框
 hi      Pmenu                   ctermbg=5               guibg=#909090           guifg=#751515
 hi      PmenuSel                ctermbg=7               guibg=#157575           guifg=#151515
