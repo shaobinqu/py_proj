@@ -26,12 +26,13 @@ set si
 "set guioptions-=m
 set showtabline=0
 "设置字体"
+set guifont=Monospace\ Regular\ 14 "linux
 "set guifont=Courier\ 12 "linux
-set guifont=Courier::h12   "widndows
+"set guifont=Courier::h12   "widndows
 
 let g:solarized_termcolors=256  "solarized主题设置在终端下的设置"
 colorscheme desert
-set nowrap  "设置不折行"
+"set nowrap  "设置不折行"
 set fileformat=unix "设置以unix的格式保存文件"
 "设置C样式的缩进格式"
 "set cindent     
