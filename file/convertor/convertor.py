@@ -48,6 +48,8 @@ def openexcel(books, sheet, outFile ):
             tmp_r = 'XY ' + str(tmp1) + ',' + str(tmp2)
             data_out.write(tmp + tmp_r)
     data_out.close()
+    rdDataBase.close()
+    app.quit()
 
 
 if __name__ == "__main__":
