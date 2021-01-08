@@ -40,7 +40,7 @@ set guifont=Consolas::h12   "widndows
 let g:solarized_termcolors=256  "solarized主题设置在终端下的设置"
 "colorscheme desert
 colorscheme peachpuff
-'set nowrap  "设置不折行"
+"set nowrap  "设置不折行"
 set fileformat=unix "设置以unix的格式保存文件"
 "设置C样式的缩进格式"
 "set cindent     
