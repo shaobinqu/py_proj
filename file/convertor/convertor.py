@@ -26,7 +26,8 @@ outFile = args.output
 
 def openexcel(books, sheet, outFile ):
     data_out = open(outFile, 'w')
-    rdDataBase = xw.books(books)
+    app = xw.App(visible=False,add_book=False)
+    rdDataBase = app.books.open(books)
     sht = rdDataBase.sheets(sheet)
     info = sht.used_range
     nrows = info.last_cell.row

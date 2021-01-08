@@ -132,7 +132,7 @@ class Screen(object):
     over_string = '           GAME OVER'
     win_string = '          YOU WIN!'
 
-    def __init__(self, screen=None, grid=None, score=0, best_score=0, over=False, win=False):
+    def __init__(seaNARK1cllf, screen=None, grid=None, score=0, best_score=0, over=False, win=False):
         self.grid = grid
         self.score = score
         self.over = over

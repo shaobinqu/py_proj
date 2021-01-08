@@ -113,9 +113,9 @@ class GameField(object):
 
 	def draw(self , screen):
 		help_string1 	= '(W)up (S)Down (A)Left (D)Right'
-		help_string2 	= ' 		   (R)Restart (Q)Exit'
-		gameover_string = ' 		GAME  OVER  		'
-		win_string 		= ' 			WIN 			'
+		help_string2 	= '(R)Restart (Q)Exit'
+		gameover_string = 'GAME  OVER  		'
+		win_string 		= 'WIN 			'
 
 		#绘制函数
 		def cast(string):
