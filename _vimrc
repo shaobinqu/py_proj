@@ -31,10 +31,10 @@ let g:asyncrun_encs='gbk'
 set ai
 set si
 "隐藏顶部标签栏"
-set guioptions-=m
+"set guioptions-=m
 set showtabline=1
 "设置字体"
-"set guifont=Courier\ 12 "linux
+"set guifont=VL\ Gothic\ 12 "linux
 set guifont=Consolas::h12   "widndows
 
 let g:solarized_termcolors=256  "solarized主题设置在终端下的设置"
